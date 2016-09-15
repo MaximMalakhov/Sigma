@@ -114,7 +114,7 @@ a:hover{
 }
 
 .search__button:before{
-	background-image: url(../images/icons.png);
+	background-image: url(../images/images-decore/icons.png);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -125,7 +125,7 @@ a:hover{
 }
 
 .search__button:hover:before{
-	background-image: url(../images/icons.png);
+	background-image: url(../images/images-decore/icons.png);
 	background-position: -20px 0;
 }
 
@@ -217,10 +217,6 @@ a:hover{
 	background-image: linear-gradient( 0deg, rgb(255,150,0) 0%, rgb(255,198,0) 100%);
 }
 
-.services__inner{
-
-}
-
 .service{
 	display: block;
 	text-align: center;
@@ -251,23 +247,23 @@ a:hover{
 }
 
 .service__icon-1C{
-	background-image: url(../images/icon-1c.png);
+	background-image: url(../images/images-service/icon-1c.png);
 }
 
 .service__icon-bookkeeping{
-	background-image: url(../images/icon-accountant.png);
+	background-image: url(../images/images-service/icon-accountant.png);
 }
 
 .service__icon-equipment{
-	background-image: url(../images/icon-equipment.png);
+	background-image: url(../images/images-service/icon-equipment.png);
 }
 
 .service__icon-software{
-	background-image: url(../images/icon-software.png);
+	background-image: url(../images/images-service/icon-software.png);
 }
 
 .service__icon-IT{
-	background-image: url(../images/icon-service.png);
+	background-image: url(../images/images-service/icon-service.png);
 }
 
 .service__description{
@@ -366,11 +362,11 @@ a:hover{
 }
 
 .product__stock{
-	background-image: url(../images/stock.png);
+	background-image: url(../images/images-decore/stock.png);
 }
 
 .product__leader{
-	background-image: url(../images/leader.png);
+	background-image: url(../images/images-decore/leader.png);
 }
 
 .product__info{
@@ -397,7 +393,7 @@ a:hover{
 
 .product__add-basket{
 	float: right;
-	background-image: url(../images/icons.png);
+	background-image: url(../images/images-decore/icons.png);
 	background-position: 0 -17px;
 	width: 35px;
 	height: 27px;
@@ -425,12 +421,12 @@ a:hover{
 }
 
 .arrow-prev{
-	background-image: url(../images/icons.png);
+	background-image: url(../images/images-decore/icons.png);
 	background-position: 0 -46px;
 }
 
 .arrow-next{
-	background-image: url(../images/icons.png);
+	background-image: url(../images/images-decore/icons.png);
 	background-position: -21px -46px;
 }
 
