@@ -1,0 +1,24 @@
+{
+  "name": "sigma",
+  "version": "0.0.0",
+  "description": "* css - ������� ���������� CSS ����� �������;\r * images - ������� ���������� ����������� ������������ � �������.\r * index.html - ���� ���������� �������� ���-��������.",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp.spritesmith": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MaximMalakhov@github.com/MaximMalakhov/Sigma.git"
+  },
+  "author": "maxim malahov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaximMalakhov/Sigma/issues"
+  },
+  "homepage": "https://github.com/MaximMalakhov/Sigma#readme"
+}
