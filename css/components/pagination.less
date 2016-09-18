@@ -1,0 +1,46 @@
+@color-pagination-link_active: #003382;
+
+.pagination{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.arrow-prev, .arrow-next{
+    display: inline-block;
+    width: 14px;
+    height: 26px;
+    text-indent: -9999px;
+	vertical-align: middle;
+}
+
+.pagination__link_active{
+	color: @color-pagination-link_active;
+}
+
+.arrow-prev{
+	.path("icons/icons.png");
+	background-position: 0 -126px;
+}
+
+.arrow-next{
+	.path("icons/icons.png");
+	background-position: -21px -126px;
+}
+
+.pagination__inner{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.pagination__link{
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 12px;
+	
+	&:last-child{
+		margin-right: 0;
+	}
+}
+

@@ -1,0 +1,32 @@
+@background-body: #fff;
+@color-body: #000;
+
+@font-size-body: 12px;
+@font-family-body: Arial, sans-serif;
+
+@elements-gradient: linear-gradient( 0deg, rgb(255,150,0) 0%, rgb(255,198,0) 100%);
+@body-gradient: linear-gradient( 0deg, rgb(164,199,234) 0%, rgb(227,236,244) 100%);
+
+.path(@name){
+    @base-path: "../images/";
+    background-image: url("@{base-path}@{name}");	 
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: @font-family-body;
+	font-size: @font-size-body;
+	color: @color-body;
+	background: @background-body;
+    background-image: @body-gradient;
+}
+
+.clear:after{
+	 content: "";
+	 display: block;
+	 clear: both;
+}

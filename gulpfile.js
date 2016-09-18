@@ -5,13 +5,13 @@ gulp.task('sprite', function () {
 	var spriteData = gulp.src("images/icons/**/*.png")
 	.pipe(spritesmith({
 		imgName: 'sprite.png',
-		cssName: 'sprite.css'
+		cssName: 'sprite.less'
   }));
 
   var imgStream = spriteData.img
     .pipe(gulp.dest("sprite-images/"));
 
   var cssStream = spriteData.css
-    .pipe(gulp.dest("sprite-css/"));
+    .pipe(gulp.dest("sprite-less/"));
   return;
 });
