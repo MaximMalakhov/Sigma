@@ -1,0 +1,104 @@
+.menu__item{
+	display: inline-block;
+	margin-right: 20px;
+	
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.menu__link{
+	font-size: 14px;
+}
+
+/*
+* Панель серивисов
+*/
+
+.services{
+	margin-top: 28px;
+	margin-bottom: 23px;
+}
+
+.services__list{
+	padding: 7px 33px 7px 48px;
+	background-color: @color-bg-or;
+	border-radius: 30px;
+	background-image: @color-bg-or;
+}
+
+.service{
+	display: block;
+	text-align: center;
+}
+
+.services__item{
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+    border-right: 1px solid #ffe17d;
+    border-left: 1px solid #b28500;
+	
+	&:first-child{
+		border-left: none;
+	}
+
+	&:last-child{
+		border-right: none;
+	}
+}
+
+.service__icon{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    width: 88px;
+	height: 52px;
+    display: inline-block;
+}
+
+.service__icon-1C{
+	.path("decore/icon-1c.png");
+}
+
+.service__icon-bookkeeping{
+	.path("decore/icon-accountant.png");
+}
+
+.service__icon-equipment{
+	.path("decore/icon-equipment.png");
+}
+
+.service__icon-software{
+	.path("decore/icon-software.png");
+}
+
+.service__icon-IT{
+	.path("decore/icon-service.png");
+}
+
+.service__description{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*
+*категории сайд-бара
+*/
+
+.categories{
+	line-height: 24px;
+}
+
+.subcategory{
+	line-height: 17px;
+	margin-left: 30px;
+}
+
+.subcategory__item{
+	margin-bottom: 15px;
+	
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
