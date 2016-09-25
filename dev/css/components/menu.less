@@ -1,6 +1,6 @@
 .menu__item{
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 1.8em;
 	
 	&:last-child{
 		margin-right: 0;
@@ -8,7 +8,7 @@
 }
 
 .menu__link{
-	font-size: 14px;
+	font-size: 1.2rem;
 }
 
 /*
@@ -16,15 +16,15 @@
 */
 
 .services{
-	margin-top: 28px;
-	margin-bottom: 23px;
+	margin-top: 2.2em;
+	margin-bottom: 1.95em;
 }
 
 .services__list{
-	padding: 7px 33px 7px 48px;
+	padding: 0.65em 2.65em 0.65em 4em;
 	background-color: @color-bg-or;
-	border-radius: 30px;
-	background-image: @color-bg-or;
+	border-radius: 2.5em;
+	background-image: @color-gradient;
 }
 
 .service{
@@ -33,8 +33,9 @@
 }
 
 .services__item{
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0.45em;
+	padding-right: 0.45em;
+	width: 18.1%;
 	float: left;
     border-right: 1px solid #ffe17d;
     border-left: 1px solid #b28500;
@@ -45,6 +46,13 @@
 
 	&:last-child{
 		border-right: none;
+	}
+}
+
+@media screen and (max-device-width: 768px){
+	
+	.services__item{
+		min-height: 83px; 
 	}
 }
 
@@ -78,7 +86,7 @@
 
 .service__description{
 	display: block;
-	font-size: 14px;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 
@@ -86,17 +94,24 @@
 *категории сайд-бара
 */
 
+@media screen and (max-device-width: 768px){
+	
+	.sidebar{
+		display: none; 
+	}
+}
+
 .categories{
-	line-height: 24px;
+	line-height: 2em;
 }
 
 .subcategory{
-	line-height: 17px;
-	margin-left: 30px;
+	line-height: 1.25em;
+	margin-left: 2.5em;
 }
 
 .subcategory__item{
-	margin-bottom: 15px;
+	margin-bottom: 1.15em;
 	
 	&:last-child{
 		margin-bottom: 0;

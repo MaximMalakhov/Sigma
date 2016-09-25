@@ -1,12 +1,26 @@
 .top-panel{
 	background-color: @color-bg-grey;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	min-width: 960px;
+	padding-top: 1.15em;
+	padding-bottom: 1.15em;
+	min-width: 100px;
+	max-width: 960px;
 }
 
 .top-panel__menu{
 	float: left;
+}
+
+@media screen and (max-device-width: 769px){
+
+	.top-panel__menu-list{
+		display: none;
+	}
+	
+	.top-panel__menu{
+		.path("icons/menu-hamburger.png");
+		width: 32px;
+		height: 32px;
+	}
 }
 
 .top-panel__search{

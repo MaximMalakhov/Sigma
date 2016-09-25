@@ -1,12 +1,30 @@
 .product{
 	display: inline-block;
-	width: 195px;
-	margin-left: 27px;
-	margin-bottom: 35px;
+	margin-bottom: 3.1em;
 	vertical-align: top;
+}
+
+@media screen and (min-device-width: 768px){
+	
+	.product{
+		width: 30.20%;
+		margin-left: 2.25em;		
+	}
 	
 	&:nth-child(3n+1){
 	margin-left: 0;
+	}
+}
+
+@media screen and (max-device-width: 768px){
+	
+	.product{
+		width: 45%; 
+		margin-left: 5.5em;
+	}
+	
+	&:nth-child(2n+1){
+		margin-left: 0;
 	}
 }
 
@@ -24,8 +42,8 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 80px;
-	height: 80px;
+	width: 6.6em;
+	height: 6.6em;
 }
 
 .product__stock{
@@ -44,8 +62,8 @@
 
 .product__description{
 	text-decoration: underline;
-	margin-top: 10px;
-	line-height: 19px;
+	margin-top: 0.9em;
+	line-height: 1.65em;
 }
 
 .product__price, .product__add-basket{
@@ -55,9 +73,9 @@
 .product__price{
 	float: left;
 	color: #fb9f18;
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-weight: bold;
-	margin-top: 11px;
+	margin-top: 0.95em;
 }
 
 .product__add-basket{
