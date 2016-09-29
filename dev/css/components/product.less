@@ -2,29 +2,40 @@
 	display: inline-block;
 	margin-bottom: 3.1em;
 	vertical-align: top;
+	margin-left: 2.25em;
 }
 
-@media screen and (min-device-width: 768px){
+@media screen and (min-width: 800px){
 	
 	.product{
-		width: 30.20%;
-		margin-left: 2.25em;		
-	}
+		width: 29.20%;
 	
-	&:nth-child(3n+1){
-	margin-left: 0;
+		&:nth-child(3n+1){
+			margin-left: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 799px) and (min-width: 606px){
+	
+	.product{
+		width: 30%; 
+	
+		&:nth-child(3n+1){
+			margin-left: 0;
+		}
 	}
 }
 
-@media screen and (max-device-width: 768px){
+@media screen and (max-width: 605px){
 	
 	.product{
 		width: 45%; 
-		margin-left: 5.5em;
-	}
 	
-	&:nth-child(2n+1){
-		margin-left: 0;
+		&:nth-child(2n+1){
+			margin-left: 0;
+		}
 	}
 }
 
@@ -42,8 +53,8 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: 6.6em;
-	height: 6.6em;
+	width: 80px;
+	height: 80px;
 }
 
 .product__stock{
@@ -62,8 +73,8 @@
 
 .product__description{
 	text-decoration: underline;
-	margin-top: 0.9em;
-	line-height: 1.65em;
+	margin-top: 12px;
+	line-height: 1.5rem;
 }
 
 .product__price, .product__add-basket{
@@ -75,7 +86,7 @@
 	color: #fb9f18;
 	font-size: 1.8rem;
 	font-weight: bold;
-	margin-top: 0.95em;
+	margin-top: 6px;
 }
 
 .product__add-basket{
@@ -84,4 +95,8 @@
 	background-position: 0 -97px;
 	width: 35px;
 	height: 27px;
+	
+	&:hover, &:focus{
+		opacity: 0.5;
+	}
 }
