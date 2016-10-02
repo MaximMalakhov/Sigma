@@ -1,7 +1,7 @@
 .top-panel{
 	background-color: @color-bg-grey;
-	padding-top: 1.15em;
-	padding-bottom: 1.15em;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	min-width: 100px;
 	max-width: 100%;
 }
@@ -10,7 +10,14 @@
 	float: left;
 }
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 920px){
+
+	.top-panel__menu-list{
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-width: 640px){
 
 	.top-panel__menu-list{
 		display: none;

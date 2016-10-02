@@ -5,24 +5,25 @@
 }
 
 .header__logo{
-	width: 32%;
 	float: left;
 	margin-top: 5px;
 }
+
 .font-large{
 	color: #fb9f18;
 }
 
 .contacts{	
-	width: 24.56%;
+	width: 27%;
 	float: right;
-	margin-top: 0.45em;
+	margin-top: 5px;
+	text-align: right;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 921px){
 
 	.contacts{
-		margin-right: 3.5em;
+		margin-right: 8%;
 		font-size: 2rem;
 	}
 	
@@ -31,7 +32,7 @@
 	}
 }
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 920px){
 
 	.contacts{
 		margin-right: 2em;
@@ -43,19 +44,29 @@
 	}
 }
 
-@media screen and (max-width: 605px){
+@media screen and (min-width: 641px){
+
+	.header__logo{
+		width: 32%;
+	}
+}
+
+@media screen and (max-width: 640px){
 
 	.contacts{
 		display: none;
+	}
+	
+	.header__logo{
+		width: 45%;
 	}
 }
 
 .telephone, .address{
 	display: block;
 	color: #00378a;
-	text-align: right;
 }
 
 .address{
-	margin-top: 0.4em;
+	margin-top: 10px;
 }
