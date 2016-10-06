@@ -403,7 +403,7 @@ ul {
 }
 @media screen and (max-width: 640px) {
   .product {
-    width: 45%;
+    width: 43%;
   }
 }
 .product__img {
