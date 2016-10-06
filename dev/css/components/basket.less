@@ -47,6 +47,13 @@
 	
 }
 
+.cart__link, .entry, .registration{
+	
+	&:hover, &:focus{
+		text-decoration: underline;
+	}
+}
+
 @media screen and (max-width: 920px) and (min-width: 640px){
 
 	.basket{
@@ -63,4 +70,23 @@
 	.basket__inner{
 		min-height: 60px;
 	}
+	
+	/*картинки для логина и корзины*/
+	/*.basket__inner{
+		display: none;
+	}
+	
+	.icon-cart{
+		position: absolute;
+		.path("icons/shopping-cart.svg");
+		width: 32px;
+		height: 32px;
+	}
+	
+	.icon-identification{
+		position: absolute;
+		.path("icons/avatar.svg");
+		width: 32px;
+		height: 32px;
+	}*/
 }
