@@ -34,6 +34,69 @@
 	}
 }
 
+@media screen and (min-width: 481px){
+		
+	.product__stock, .product__leader{
+		right: 0;
+		width: 80px;
+		height: 80px;
+	}
+		
+	.product__stock{
+		.path("icons/icons.png");
+		background-position: 0 0;
+	}
+
+	.product__leader{
+		.path("icons/icons.png");
+		background-position: 80px 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	
+	.product{
+		width: 87%; 
+	}
+	
+	.product__description{
+		text-align: left;
+	}
+	
+	.product__stock{
+		right: 0;
+		width: 70px;
+		height: 70px;
+	}
+	
+	.product__leader{
+		right: -15px;
+		width: 70px;
+		height: 70px;
+	}
+	
+	.product__stock{
+		.path("icons/sticker-stock.png");
+	}
+
+	.product__leader{
+		.path("icons/sticker-leader.png");
+	}
+	
+	.product__link{
+		text-align: center;
+	}
+	
+	.product__preview {
+		display: inline-block;
+	}
+}
+
+.product__stock, .product__leader{
+	position: absolute;
+	top: 0;
+}
+	
 .product__img{
 	max-width: 100%;
 	height: auto;
@@ -47,24 +110,6 @@
 .product__preview{
 	position: relative;
 	text-align: center;
-}
-
-.product__stock, .product__leader{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 80px;
-	height: 80px;
-}
-
-.product__stock{
-	.path("icons/icons.png");
-	background-position: 0 0;
-}
-
-.product__leader{
-	.path("icons/icons.png");
-	background-position: 80px 0;
 }
 
 .product__info{
