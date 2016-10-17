@@ -1,0 +1,7 @@
+/*
+*функция сокращающая написаие пути к картинкам
+*/
+.path(@name){
+    @base-path: "../images/";
+    background-image: url("@{base-path}@{name}");	 
+}

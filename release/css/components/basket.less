@@ -1,0 +1,103 @@
+.basket{
+	position: relative;
+	text-align: center;
+}
+
+.basket__inner{
+	padding-top: 5px;
+	background-color: @color-bg-or;
+	background-image: @color-gradient;
+	margin-bottom: 1.8em;
+}
+
+.identification{
+	margin-top: 0.9em;
+	font-size: 1.8rem;
+}
+
+.cart{
+	font-size: 3rem;
+}
+
+@media screen and (min-width: 921px){
+
+	.basket{
+		width: 220px;
+	}
+	
+	.basket__inner{
+		min-height: 4.4em;
+		
+		&:after{
+			position: absolute;
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 110px 0 110px;
+			border-color: rgba(0,0,0,0);
+			border-top-color: @color-bg-or;
+			left: 0;
+		}
+	}
+	
+}
+
+.cart__link, .entry, .registration{
+	
+	&:hover, &:focus{
+		text-decoration: underline;
+	}
+}
+
+@media screen and (max-width: 920px) and (min-width: 641px){
+
+	.basket{
+		width: 23.5%;
+	}
+}
+
+@media screen and (max-width: 640px) and (min-width: 481px){
+
+	.basket{
+		width: 45%;
+	}
+	
+	.basket__inner{
+		min-height: 60px;
+	}
+}
+
+@media screen and (min-width: 481px){
+	.basket__header{
+		float: right;
+	}
+}
+
+@media screen and (max-width: 480px){
+	/*картинки для логина и корзины*/
+	/*.basket__inner{
+		display: none;
+	}
+	
+	.icon-cart{
+		position: absolute;
+		.path("icons/shopping-cart.svg");
+		width: 52px;
+		height: 52px;
+		right: 75px;
+		top: 10px;
+	}
+	
+	.icon-identification{
+		position: absolute;
+		.path("icons/avatar.svg");
+		width: 52px;
+		height: 52px;
+		right: 10px;
+		top: 10px;
+	}*/
+	.basket{
+		width: 100%;
+	}
+}

@@ -1,0 +1,47 @@
+.top-panel{
+	background-color: @color-bg-grey;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	min-width: 100px;
+	max-width: 100%;
+}
+
+.top-panel__menu{
+	float: left;
+}
+
+@media screen and (max-width: 920px){
+
+	.top-panel__menu-list{
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	.top-panel__menu-list{
+		display: none;
+	}
+	
+	.top-panel__menu{
+		padding-top: 2px;
+		padding-left: 5px;
+	}
+	
+	.top-panel__menu:before{
+		content: "";
+		display: block;
+		border-bottom: 10px double black;
+		border-top: 3px solid black;
+		height: 4px;
+		width: 25px;
+	}
+	
+	.top-panel__search{
+		padding-right: 5px;
+	}
+}
+
+.top-panel__search{
+	float: right;
+}

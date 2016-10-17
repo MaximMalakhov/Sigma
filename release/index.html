@@ -3,15 +3,15 @@
 <head>
     <title>Главная</title>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 	<div class="page">
 		<div class="top-panel">
 			<div class="main-container clear">
 				<nav class="top-panel__menu menu">
-					<ul class="menu__list">
+					<ul class="menu__list top-panel__menu-list">
 						<li class="menu__item">
 							<a href="#" class="menu__link">Единый семинар</a>
 						</li>
@@ -35,27 +35,29 @@
 						</li>
 					</ul>
 				</nav>
-				<form class="search top-panel__search" action="#">
-					<input class="field" type="text" required name="search_query" placeholder="Поиск по сайту">
+				<form class="search top-panel__search clear" action="#">
 					<button class="button search__button" type="submit">Найти</button>
+					<input class="field" type="search" required name="search_query" placeholder="Поиск по сайту">
 				</form>
 			</div>
 		</div>
 		<div class="main-container clear">
 			<header class="header clear">
-				<a class="logo" href="#">
-					<img src="images/content/logo.png" alt="Сигма. Автоматизация бизнеса.">
+				<a class="header__logo" href="#">
+					<img  class="logo" src="images/content/logo.png" alt="Сигма. Автоматизация бизнеса.">
 				</a>
 				<div class="basket basket__header">
 					<div class="basket__inner">
 						<div class="cart">
-							<a href="#">Корзина</a>
+							<a class="cart__link" href="#">Корзина</a>
 						</div>
 						<div class="identification">
-							<a href="#">вход</a> /
-							<a href="#">регистрация</a>
+							<a class="entry" href="#">вход</a> /
+							<a class="registration" href="#">регистрация</a>
 						</div>
 					</div>
+					<i class="icon-cart"></i>
+					<i class="icon-identification"></i>
 				</div>
 				<div class="contacts clear">
 					<a href="tel:+78412450054" class="telephone">8 (8412)
@@ -154,7 +156,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 								<i class="product__stock"></i>
 							</div>
 							<div class="product__description">
@@ -169,7 +171,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -183,7 +185,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 								<i class="product__leader"></i>
 							</div>
 							<div class="product__description">
@@ -198,7 +200,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -212,7 +214,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 								<i class="product__leader"></i>
 							</div>
 							<div class="product__description">
@@ -227,7 +229,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 								<i class="product__leader"></i>
 							</div>
 							<div class="product__description">
@@ -242,7 +244,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -256,7 +258,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -270,7 +272,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -284,7 +286,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-1.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -298,7 +300,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-2.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -312,7 +314,7 @@
 					<div class="product">
 						<a href="#" class="product__link">
 							<div class="product__preview">
-								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода">
+								<img src="images/content/scanner-3.jpg" alt="Светодиодный сканер штрихкода" class="product__img">
 							</div>
 							<div class="product__description">
 								<span>Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</span>
@@ -324,7 +326,7 @@
 						</div>
 					</div>
 					<div class="pagination">
-						<a href="#" class="arrow-prev">Предыдущая страница</a>
+						<a href="#" class="pagination__arrow-prev">Предыдущая страница</a>
 						<div class="pagination__inner">
 							<a href="#" class="pagination__link pagination__link_active">1</a>
 							<a href="#" class="pagination__link">2</a>
@@ -334,7 +336,7 @@
 							<a href="#" class="pagination__link">6</a>
 							<a href="#" class="pagination__link">7</a>
 						</div>
-						<a href="#" class="arrow-next">Следующая страница</a>
+						<a href="#" class="pagination__arrow-next">Следующая страница</a>
 					</div>
 				</div>
 			</div>

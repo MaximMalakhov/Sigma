@@ -104,9 +104,6 @@ ul {
   max-width: 100%;
   height: auto;
 }
-.header__logo {
-  margin-top: 5px;
-}
 .font-large {
   color: #fb9f18;
 }
@@ -123,6 +120,10 @@ ul {
   }
   .font-large {
     font-size: 4rem;
+  }
+  .header__logo {
+    margin-top: 5px;
+    display: inline-block;
   }
 }
 @media screen and (max-width: 920px) {
@@ -145,6 +146,9 @@ ul {
   }
   .header__logo {
     width: 45%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 481px) {
@@ -209,29 +213,24 @@ ul {
 .footer__info {
   color: #584c3d;
 }
-@media screen and (min-width: 641px) {
-  footer__info {
-    margin-top: 2.1em;
+@media screen and (max-width: 640px) {
+  .copyright,
+  .footer__cms {
+    padding-left: 5px;
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 641px) {
   .copyright {
     float: left;
   }
   .footer__cms {
     float: right;
   }
-}
-@media screen and (min-width: 641px) {
-  .copyright {
-    display: block;
-  }
-  .footer__cms {
-    display: block;
+  footer__info {
+    margin-top: 2.1em;
   }
 }
 .page {
-  padding-bottom: 18.75em;
   min-height: 100vh;
   box-sizing: border-box;
   position: relative;
@@ -245,6 +244,16 @@ ul {
   .main-container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .page {
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 941px) {
+  .page {
+    padding-bottom: 18.75em;
   }
 }
 .products {
@@ -458,6 +467,7 @@ ul {
   }
   .product__description {
     text-align: left;
+    font-size: 1.4rem;
   }
   .product__stock {
     right: 0;
@@ -535,20 +545,15 @@ ul {
   outline: none;
   border: none;
   float: right;
-  height: 18px;
   padding-left: 5px;
   padding-right: 5px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 920px) and (min-width: 641px) {
   .search {
-    width: 20%;
+    width: 25%;
   }
-  .search__button {
-    height: 20px;
-    width: 25px;
-  }
-  .search__button:before {
-    left: 5px;
+  .field {
+    width: 83%;
   }
 }
 @media screen and (min-width: 921px) {
@@ -563,10 +568,28 @@ ul {
   .search__button:before {
     left: 4px;
   }
+  .field {
+    height: 18px;
+  }
 }
 @media screen and (max-width: 920px) {
   .field {
-    display: none;
+    height: 20px;
+  }
+  .search__button {
+    height: 20px;
+    width: 25px;
+  }
+  .search__button:before {
+    left: 5px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .search {
+    width: 48%;
+  }
+  .field {
+    width: 75%;
   }
 }
 .search__button {

@@ -1,0 +1,107 @@
+/*
+* Панель серивисов
+*/
+
+.services{
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+.services__list{
+	background-color: @color-bg-or;
+	background-image: @color-gradient;
+}
+	
+.service{
+	display: block;
+	text-align: center;
+}
+
+.services__item{
+	padding-left: 5px;
+	padding-right: 5px;
+    border-right: 1px solid #ffe17d;
+    border-left: 1px solid #b28500;
+	
+	
+	&:first-child{
+		border-left: none;
+	}
+
+	&:last-child{
+		border-right: none;
+	}
+}
+.services__item a{
+
+	&:hover, &:focus{
+		text-decoration: underline;
+	}
+}
+
+@media screen and (min-width: 921px){
+	
+	.services__list{
+		padding: 7px 31px;
+	}
+}
+
+@media screen and (min-width: 641px){
+		
+		.services__item{
+			float: left;
+			min-height: 82px;
+			width: 18%;
+		}
+		
+		.services__list{
+			border-radius: 30px;
+		}
+}
+
+@media screen and (max-width: 640px){
+		
+		.services__list{
+			overflow: auto;
+		}
+		
+		.services__item{
+			white-space: nowrap;
+			display: table-cell;
+			width: 16.5%;
+		}
+}
+
+.service__icon{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    width: 88px;
+	height: 52px;
+    display: inline-block;
+}
+
+.service__icon-1C{
+	.path("decore/icon-1c.png");
+}
+
+.service__icon-bookkeeping{
+	.path("decore/icon-accountant.png");
+}
+
+.service__icon-equipment{
+	.path("decore/icon-equipment.png");
+}
+
+.service__icon-software{
+	.path("decore/icon-software.png");
+}
+
+.service__icon-IT{
+	.path("decore/icon-service.png");
+}
+
+.service__description{
+	display: block;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
