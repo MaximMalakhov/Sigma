@@ -14,6 +14,10 @@
 			margin-left: 0;
 		}
 	}
+	
+	.product__description{
+		line-height: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 921px) and (min-width: 641px){
@@ -25,6 +29,10 @@
 			margin-left: 0;
 		}
 	}
+	
+	.product__description{
+		line-height: 2rem;
+	}
 }
 
 @media screen and (max-width: 640px){
@@ -32,26 +40,12 @@
 	.product{
 		width: 43%; 
 	}
-}
-
-@media screen and (min-width: 481px){
-		
-	.product__stock, .product__leader{
-		right: 0;
-		width: 80px;
-		height: 80px;
-	}
-		
-	.product__stock{
-		.path("icons/icons.png");
-		background-position: 0 0;
-	}
-
-	.product__leader{
-		.path("icons/icons.png");
-		background-position: 80px 0;
+	
+	.product__description{
+		line-height: 2.2rem;
 	}
 }
+
 
 @media screen and (max-width: 480px){
 	
@@ -64,43 +58,41 @@
 		font-size: 1.4rem;
 	}
 	
-	.product__stock{
-		right: 0;
-		width: 70px;
-		height: 70px;
-	}
-	
-	.product__leader{
-		right: -15px;
-		width: 70px;
-		height: 70px;
-	}
-	
-	.product__stock{
-		.path("icons/sticker-stock.png");
-	}
-
-	.product__leader{
-		.path("icons/sticker-leader.png");
-	}
-	
-	.product__link{
-		text-align: center;
-	}
-	
 	.product__preview {
 		display: inline-block;
 	}
-}
-
-.product__stock, .product__leader{
-	position: absolute;
-	top: 0;
 }
 	
 .product__img{
 	max-width: 100%;
 	height: auto;
+}
+
+.product__sticker{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.product__sticker-stock{
+    background-color: #ffb400;
+}
+
+.product__sticker-leader {
+    background-color: #002669;
+    color: #fff;
+}
+
+.product__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .product__link{
@@ -110,7 +102,6 @@
 
 .product__preview{
 	position: relative;
-	text-align: center;
 }
 
 .product__info{
@@ -120,7 +111,6 @@
 .product__description{
 	text-decoration: underline;
 	margin-top: 12px;
-	line-height: 1.5rem;
 }
 
 .product__price, .product__add-basket{
@@ -138,9 +128,9 @@
 .product__add-basket{
 	float: right;
 	.path("icons/icons.png");
-	background-position: 0 -97px;
-	width: 35px;
-	height: 27px;
+	background-position: 0 -82px;
+	width: 33px;
+	height: 26px;
 	
 	&:hover, &:focus{
 		opacity: 0.5;
