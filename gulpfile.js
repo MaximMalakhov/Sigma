@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-	spritesmith = require('gulp.spritesmith');
+	spritesmith = require('gulp.spritesmith'),
+	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sprite', function () {
 	var spriteData = gulp.src("dev/images/icons/*.png")
@@ -15,3 +16,16 @@ gulp.task('sprite', function () {
 		.pipe(gulp.dest("dev/css/helpers/"));
 	return;
 	});
+	
+/*автопрефиксер css*/
+
+gulp.task('autoprefix', function() {
+	gulp.src('dev/css/style.css')
+		.pipe(autoprefixer({
+			browsers: ['IE 11','last 2 iOS versions','last 1 Chrome versions',
+			'last 1 Firefox versions','last 1 Safari versions',
+			'last 1 Opera versions','last 1 Edge versions','Android >= 4.4'],
+			cascade: false
+		}))
+	.pipe(gulp.dest('dev/css/'))
+});
