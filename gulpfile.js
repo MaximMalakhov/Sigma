@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
 	spritesmith = require('gulp.spritesmith'),
+	cleanCSS = require('gulp-clean-css'),
 	autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sprite', function () {
@@ -28,4 +29,12 @@ gulp.task('autoprefix', function() {
 			cascade: false
 		}))
 	.pipe(gulp.dest('dev/css/'))
+});
+
+/*для минификации css*/
+
+gulp.task('minify-css', function() {
+	return gulp.src('dev/css/style.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('css'));
 });
