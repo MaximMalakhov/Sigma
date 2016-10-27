@@ -36,5 +36,5 @@ gulp.task('autoprefix', function() {
 gulp.task('minify-css', function() {
 	return gulp.src('dev/css/style.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('dev/css/'));
 });
