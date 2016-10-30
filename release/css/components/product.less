@@ -23,8 +23,31 @@
 		font-size: 1.8rem;
 		margin-top: 6px;
 	}
+	
+	.product__sticker{
+		height: 80px;
+		width: 80px;
+		border-radius: 50%;
+		right: 0;
+		font-size: 1.5rem;
+	}
+	
+	.product__caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
 }
+@media screen and (max-width: 921px){
 
+	.product__sticker{
+		right: 0;
+		text-align: center;
+		font-size: 1.3rem;
+		padding: 5px 10px;
+	}
+}
 @media screen and (max-width: 921px) and (min-width: 641px){
 	
 	.product{
@@ -85,12 +108,7 @@
 
 .product__sticker{
     position: absolute;
-    width: 80px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    font-size: 1.5rem;
     font-weight: bold;
-    right: 0;
     top: 0;
     text-align: center;
 }
@@ -104,19 +122,9 @@
     color: #fff;
 }
 
-.product__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
 .product__link{
 	display: block;
 	color: #003280;
-}
-
-.product__preview{
 	position: relative;
 }
 
