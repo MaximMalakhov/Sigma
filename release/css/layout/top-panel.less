@@ -22,15 +22,18 @@
 	.top-panel__menu-list{
 		display: none;
 	}
+	
 	.menu__link:focus, .menu__link:hover {
 		background-color: #000;
 		text-decoration: none;
 		color: #fff;
 	}
+	
 	.top-panel__menu{
 		padding-top: 2px;
 		padding-left: 5px;
 	}
+	
 	/*реализация мобльного гамбургера меню*/
 	.menu__hamburger{
 		display: block;
@@ -57,7 +60,9 @@
 		margin-left: 10px;
 		height: 20px;
 		width: 15px;
-		position: fixed;
+		position: absolute;
+		left: 0;
+		top: 0;
 	}
 	
 	.top-panel__search{
@@ -65,23 +70,29 @@
 	}
 	
 	.menu-checkbox:checked~.top-panel__menu{
-		position: absolute;
-		z-index: 4;
+		position: fixed;
 		top: 0;
-		bottom: 0;
 		left: 0;
-		right: 0;
+		width: 100vw;
+		height: 100vh;
 		background-color: rgba(0,0,0,0.8);
+		z-index: 9;
+		
+		&:before{
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
 	}
 	
 	.menu-checkbox:checked~.top-panel__menu .menu__list{
-		display: block;
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		max-height: 100%;
+		overflow: auto;
 		text-align: center;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		width: 80%;
 	}
 
 	.menu__link{
