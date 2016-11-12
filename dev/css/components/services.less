@@ -32,11 +32,46 @@
 		border-right: none;
 	}
 }
+
 .services__item a{
 
 	&:hover, &:focus{
 		text-decoration: underline;
 	}
+}
+
+.service__icon{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+    width: 88px;
+	height: 52px;
+    display: inline-block;
+}
+
+.service__icon-1C{
+	.path("decore/icon-1c.png");
+}
+
+.service__icon-bookkeeping{
+	.path("decore/icon-accountant.png");
+}
+
+.service__icon-equipment{
+	.path("decore/icon-equipment.png");
+}
+
+.service__icon-software{
+	.path("decore/icon-software.png");
+}
+
+.service__icon-IT{
+	.path("decore/icon-service.png");
+}
+
+.service__description{
+	display: block;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 @media screen and (min-width: 921px){
@@ -78,38 +113,4 @@
 		.services{
 			margin-top: 20px;
 		}
-}
-
-.service__icon{
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-    width: 88px;
-	height: 52px;
-    display: inline-block;
-}
-
-.service__icon-1C{
-	.path("decore/icon-1c.png");
-}
-
-.service__icon-bookkeeping{
-	.path("decore/icon-accountant.png");
-}
-
-.service__icon-equipment{
-	.path("decore/icon-equipment.png");
-}
-
-.service__icon-software{
-	.path("decore/icon-software.png");
-}
-
-.service__icon-IT{
-	.path("decore/icon-service.png");
-}
-
-.service__description{
-	display: block;
-	font-size: 1.2rem;
-	font-weight: bold;
 }

@@ -3,6 +3,8 @@ var gulp = require('gulp'),
 	cleanCSS = require('gulp-clean-css'),
 	autoprefixer = require('gulp-autoprefixer');
 
+/*ф-ия для создания спрайтов*/
+
 gulp.task('sprite', function () {
 	var spriteData = gulp.src("dev/images/icons/*.png")
 	.pipe(spritesmith({
@@ -18,7 +20,7 @@ gulp.task('sprite', function () {
 	return;
 	});
 	
-/*автопрефиксер css*/
+/*ф-ия автопрефиксер css*/
 
 gulp.task('autoprefix', function() {
 	gulp.src('dev/css/style.css')
@@ -31,7 +33,7 @@ gulp.task('autoprefix', function() {
 	.pipe(gulp.dest('dev/css/'))
 });
 
-/*для минификации css*/
+/*ф-ия для минификации css*/
 
 gulp.task('minify-css', function() {
 	return gulp.src('dev/css/style.css')
